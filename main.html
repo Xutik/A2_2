@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Escape Rooms (ESC)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="site-logo" href="#home">
+        <img src="assets/Logo.png" width="120" height="40">
+      </a>
+        <p class="site-title">
+            Hacker <br>
+            Escape <br>
+            Rooms
+        </p>
+
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#play">Play online</a></li>
+        <li><a href="#play">Play on-site</a></li>
+        <li><a href="#story">The story</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-banner" id="home">
+      <img
+        class="hero-banner_image"
+        src="assets/Header_Img.png"
+      >
+      <div class="hero-banner_content">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="reviews-title">
+      <div class="switcher">
+        <button class="button button-secondary is-active" type="button" data-challenge-type="on-site">
+          On-site challenges
+        </button>
+
+        <a class="switch-link" href="#online-challenges" data-challenge-type="online">
+          Online challenges
+        </a>
+      </div>
+
+      <blockquote class="review">
+        <div class="review_author">
+          <img
+            class="review_portrait"
+            src="assets/Reviewer_portrait.png"
+            width="72"
+            height="72"
+          >
+
+          <div class="review_text">
+            <p>
+              This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </p>
+            <footer>
+                <cite>John Doe,
+                Visited us in September 2021</cite>
+            </footer>
+          </div>
+        </div>
+      </blockquote>
+
+      <div class="popular-challenges" id="popular-challenges">
+        <h2 id="reviews-title">Popular challenges right now</h2>
+
+        <div class="challenge-slider" aria-label="Popular challenges carousel">
+          <article class="challenge-card">
+            <img
+              class="challenge-card_image"
+              src="assets/Review_img.png"
+            >
+
+            <div class="challenge-card_content">
+              <h3>Title of room (on-site)</h3>
+
+              <div class="challenge-card_meta">
+                <div class="rating" role="img" aria-label="Rated 4 out of 5 stars">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_blank.png">
+                </div>
+
+                <span class="participants">2-6 participants</span>
+              </div>
+
+              <p class="challenge-card_description">
+                Praeterea, ex culpa non invenies unum aut non accusatis unum.
+                Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.
+              </p>
+
+              <a class="button button-primary" href="#book">
+                Book this room
+              </a>
+            </div>
+          </article>
+
+          <article class="challenge-card">
+            <img
+              class="challenge-card_image"
+              src="assets/Review_img.png"
+            >
+
+            <div class="challenge-card_content">
+              <h3>Title of room (on-site) - 2</h3>
+
+              <div class="challenge-card_meta">
+                <div class="rating" role="img" aria-label="Rated 4 out of 5 stars">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_blank.png">
+                </div>
+
+                <span class="participants">3–6 participants</span>
+              </div>
+
+              <p class="challenge-card_description">
+                Praeterea, ex culpa non invenies unum aut non accusatis unum.
+                Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.
+              </p>
+
+              <a class="button button-primary" href="#book">
+                Book this room
+              </a>
+            </div>
+          </article>
+
+          <article class="challenge-card">
+            <img
+              class="challenge-card_image"
+              src="assets/Review_img.png"
+            >
+
+            <div class="challenge-card_content">
+              <h3>Title of room (on-site) - 3</h3>
+
+              <div class="challenge-card_meta">
+                <div class="rating" role="img" aria-label="Rated 4 out of 5 stars">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_full.png">
+                <img class="rating_star" src="assets/Star_blank.png">
+                </div>
+
+                <span class="participants">2-5 participants</span>
+              </div>
+
+              <p class="challenge-card_description">
+                Praeterea, ex culpa non invenies unum aut non accusatis unum.
+                Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.
+              </p>
+
+              <a class="button button-primary" href="#book">
+                Book this room
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="switcher">
+        <button class="button button-secondary is-active" type="button" data-challenge-type="on-site">
+          On-site challenges
+        </button>
+
+        <a class="switch-link" href="#online-challenges" data-challenge-type="online">
+          Online challenges
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="visually-hidden">
+        Read more about Hacker Escape Rooms
+      </h2>
+
+      <p>
+        Quodsi haberent magnalia inter potentiam et divitias, et non illam
+        quidem haec eo spectant haec quoque vos omnino desit illud quo solo
+        felicitatis libertatisque perficiuntur.
+      </p>
+
+      <a class="button button-outline" href="#story">
+        Read the full story
+      </a>
+    </section>
+
+      <article class="info-card">
+        <img
+          class="info-card_image"
+          src="assets/Left_Img.png"
+        >
+
+        <div class="info-card_content">
+          <h3>Play with your friends or build your team stronger at work</h3>
+
+          <p>
+            Praeterea, ex culpa non invenies unum aut non accusatis unum.
+            Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.
+          </p>
+
+          <a class="button button-primary" href="#contact">
+            Book on-site today
+          </a>
+        </div>
+      </article>
+
+      <article class="info-card" id="play">
+        <img
+          class="info-card_image"
+          src="assets/Right_Img.png"
+        >
+
+        <div class="info-card_content">
+          <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+
+          <p>
+            Praeterea, ex culpa non invenies unum aut non accusatis unum.
+            Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.
+          </p>
+
+          <a class="button button-primary" href="#contact">
+            See all challenges
+          </a>
+        </div>
+      </article>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-column">
+      <h2>[Esc] Hacker Escape Rooms</h2>
+      <p>
+        Quodsi haberent magnalia inter potentiam et divitias, et non illam
+        quidem haec eo spectant haec quoque vos omnino desit illud quo solo
+        felicitatis libertatisque perficiuntur.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h2>Site map</h2>
+      <nav aria-label="Footer navigation">
+        <ul>
+            <li><a href="#story">The story</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#legal">Legal</a></li>
+            <li class="footer-gap"><a href="#play">Play online</a></li>
+            <li><a href="#book">Play on-site</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h2>Follow us on</h2>
+      <ul>
+        <li><a href="#" rel="noopener">Facebook</a></li>
+        <li><a href="#" rel="noopener">Instagram</a></li>
+        <li><a href="#" rel="noopener">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
