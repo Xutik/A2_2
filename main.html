@@ -13,19 +13,18 @@
       <a class="site-logo" href="#home">
         <img src="assets/Logo.png" width="120" height="40">
       </a>
-        <p class="site-title">
-            Hacker <br>
-            Escape <br>
-            Rooms
-        </p>
+        <p class="site-title">Hacker Escape Rooms</p>
+    </nav>
 
-      <ul id="nav-menu" class="nav-menu">
+    <div class="menu-nav">
+        <ul id="nav-menu" class="nav-menu">
         <li><a href="#play">Play online</a></li>
         <li><a href="#play">Play on-site</a></li>
         <li><a href="#story">The story</a></li>
         <li><a href="#contact">Contact us</a></li>
-      </ul>
-    </nav>
+        </ul>
+    </div>
+
 
     <div class="hero-banner" id="home">
       <img
@@ -38,18 +37,44 @@
   </header>
 
   <main>
-    <section class="hero-section" aria-labelledby="reviews-title">
-      <div class="switcher">
-        <button class="button button-secondary is-active" type="button" data-challenge-type="on-site">
-          On-site challenges
-        </button>
+    <div class="switcher switcher-hero">
+        <button
+            class="button button-primary switcher-online"
+            type="button"
+            data-challenge-type="online"
+        >Online challenges</button>
 
-        <a class="switch-link" href="#online-challenges" data-challenge-type="online">
-          Online challenges
-        </a>
-      </div>
+        <button
+            class="button button-secondary is-active"
+            type="button"
+            data-challenge-type="on-site"
+        >On-site challenges</button>
+        </div>
 
-      <blockquote class="review">
+    <section class="hero-section">
+        <blockquote class="review">
+        <div class="review_author">
+          <img
+            class="review_portrait"
+            src="assets/Reviewer_portrait.png"
+            width="72"
+            height="72"
+          >
+        
+          <div class="review_text">
+            <p>
+              This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </p>
+            <footer>
+                <cite>John Doe,
+                Visited us in September 2021</cite>
+            </footer>
+          </div>    
+        </div>
+      </blockquote>
+
+      <blockquote class="review-2">
         <div class="review_author">
           <img
             class="review_portrait"
@@ -67,16 +92,16 @@
                 <cite>John Doe,
                 Visited us in September 2021</cite>
             </footer>
-          </div>
+          </div>          
         </div>
       </blockquote>
 
       <div class="popular-challenges" id="popular-challenges">
         <h2 id="reviews-title">Popular challenges right now</h2>
 
-        <div class="challenge-slider" aria-label="Popular challenges carousel">
+        <div class="challenge-slider">
           <article class="challenge-card">
-            <img
+            <img 
               class="challenge-card_image"
               src="assets/Review_img.png"
             >
@@ -85,7 +110,7 @@
               <h3>Title of room (on-site)</h3>
 
               <div class="challenge-card_meta">
-                <div class="rating" role="img" aria-label="Rated 4 out of 5 stars">
+                <div class="rating" role="img">
                 <img class="rating_star" src="assets/Star_full.png">
                 <img class="rating_star" src="assets/Star_full.png">
                 <img class="rating_star" src="assets/Star_full.png">
@@ -117,7 +142,7 @@
               <h3>Title of room (on-site) - 2</h3>
 
               <div class="challenge-card_meta">
-                <div class="rating" role="img" aria-label="Rated 4 out of 5 stars">
+                <div class="rating" role="img">
                 <img class="rating_star" src="assets/Star_full.png">
                 <img class="rating_star" src="assets/Star_full.png">
                 <img class="rating_star" src="assets/Star_full.png">
@@ -149,7 +174,7 @@
               <h3>Title of room (on-site) - 3</h3>
 
               <div class="challenge-card_meta">
-                <div class="rating" role="img" aria-label="Rated 4 out of 5 stars">
+                <div class="rating" role="img">
                 <img class="rating_star" src="assets/Star_full.png">
                 <img class="rating_star" src="assets/Star_full.png">
                 <img class="rating_star" src="assets/Star_full.png">
@@ -172,23 +197,23 @@
           </article>
         </div>
 
-        <div class="switcher">
-        <button class="button button-secondary is-active" type="button" data-challenge-type="on-site">
-          On-site challenges
-        </button>
+        <div class="switcher switcher-bottom">
+            <button
+            class="button button-primary switcher-online"
+            type="button"
+            data-challenge-type="online"
+        >Online challenges</button>
 
-        <a class="switch-link" href="#online-challenges" data-challenge-type="online">
-          Online challenges
-        </a>
+        <button
+            class="button button-secondary is-active"
+            type="button"
+            data-challenge-type="on-site"
+        >On-site challenges</button>
         </div>
       </div>
     </section>
 
-    <section class="call-to-action" aria-labelledby="cta-title">
-      <h2 id="cta-title" class="visually-hidden">
-        Read more about Hacker Escape Rooms
-      </h2>
-
+    <section class="call-to-action">
       <p>
         Quodsi haberent magnalia inter potentiam et divitias, et non illam
         quidem haec eo spectant haec quoque vos omnino desit illud quo solo
@@ -200,7 +225,7 @@
       </a>
     </section>
 
-      <article class="info-card">
+      <article class="info-card info-card-image-left">
         <img
           class="info-card_image"
           src="assets/Left_Img.png"
@@ -220,7 +245,7 @@
         </div>
       </article>
 
-      <article class="info-card" id="play">
+      <article class="info-card info-card-image-right">
         <img
           class="info-card_image"
           src="assets/Right_Img.png"
